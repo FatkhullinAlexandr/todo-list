@@ -1,0 +1,59 @@
+.todo-list {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid $main-color;
+
+    .todo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: rgb(14, 41, 87);
+        padding: 15px 20px;
+        border: 1px solid $main-color;
+        border-radius: 3px;
+        transition: border-radius 0.3s ease-in-out;
+        @media (max-width: 720px) {
+            padding: 10px 15px;
+        }
+        @media (max-width: 550px) {
+            display: block;
+        }
+        &:hover {
+            border-radius: 15px;
+        }
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        &.completed {
+            border: 1px solid rgb(220, 44, 24);
+            border-radius: 15px;
+            p {
+                text-decoration: line-through;
+            }
+        }
+        &-body {
+            display: flex;
+            align-items: center;
+            @media (max-width: 550px) {
+                margin-bottom: 10px;
+            }
+            input {
+                margin-right: 5px;
+            }
+            strong {
+                margin-right: 5px;
+            }
+        }
+        button {
+            background-color: $main-color;
+            border-radius: 5px;
+            color: #fff;
+            height: 32px;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease-in-out;
+            &:hover {
+                background-color: rgb(41, 93, 190);
+            }
+        }
+    }
+}
