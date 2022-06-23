@@ -19,6 +19,7 @@ const TodoList: React.FC = observer(() => {
                     : todos.items.map((todo, index) => (
                           <TodoItem {...todo} index={index} key={todo.id} />
                       ))}
+                {todos.items.length === 0 ? <div className="text">Пока что нет todo</div> : ''}
             </ul>
         </div>
     );

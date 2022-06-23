@@ -13,13 +13,12 @@
         border-radius: 3px;
         transition: border-radius 0.3s ease-in-out;
         @media (max-width: 720px) {
-            padding: 10px 15px;
+            padding: 10px;
         }
-        @media (max-width: 550px) {
-            display: block;
-        }
-        &:hover {
-            border-radius: 15px;
+        @media (min-width: 920px) {
+            &:hover {
+                border-radius: 15px;
+            }
         }
         &:not(:last-child) {
             margin-bottom: 10px;
@@ -34,9 +33,6 @@
         &-body {
             display: flex;
             align-items: center;
-            @media (max-width: 550px) {
-                margin-bottom: 10px;
-            }
             input {
                 margin-right: 5px;
             }

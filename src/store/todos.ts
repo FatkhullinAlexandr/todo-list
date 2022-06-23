@@ -4,7 +4,7 @@ import { ITodo } from '../types/types';
 class Todos {
     items: ITodo[] = [
         { id: 0, text: 'Купить билеты', completed: false },
-        { id: 1, text: 'Позвонить в налоговую', completed: false },
+        { id: 1, text: 'Сделать commit', completed: false },
         { id: 2, text: 'Купить продукты', completed: false },
         { id: 3, text: 'Забрать посылку', completed: false },
     ];
